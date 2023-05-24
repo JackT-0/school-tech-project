@@ -1,0 +1,266 @@
+//variables
+$main-color: #2a9d8f;
+$close-color: #e76f51;
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+    padding: 20px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.column
+{
+    flex-direction: column;
+}
+
+main
+{
+    border: 2px solid $main-color;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    hr {
+        border: 1px solid $main-color;
+        margin-bottom: 15px;
+    }
+}
+
+nav
+{
+    background-color: $main-color;
+    color: white;
+    border-radius: 20px;
+    width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    position: relative;
+    hr {
+        border: 1px solid white;
+    }
+    ul
+    {
+        list-style: none;
+        li
+        {
+            font-size: 1.2rem;
+            margin: 5px 0;
+            background: $main-color;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: filter .05s;
+        }
+        li:hover
+        {
+            cursor: pointer;
+            filter: brightness(85%);
+        }
+    }
+    h2
+    {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+}
+
+
+
+#content-wrapper
+{
+    height: calc(100vh - 40px);
+    width: 100%;
+}
+
+#list-items
+{
+    align-items: center;
+}
+
+.task-card
+{
+    background-color: $main-color;
+    color: white;
+    width: 90%;
+    min-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 10px 0;
+}
+
+.task-checkbox
+{
+    width: 20px;
+    height: 20px;
+}
+
+#add-task-button
+{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+    font-size: 2rem;
+    background-color: $main-color;
+    color: white;
+    transition: transform .2s;
+}
+
+#add-task-button:hover
+{
+    filter: brightness(85%);
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#add-task-button:active
+{
+    filter: brightness(110%); 
+}
+
+i
+{
+    margin-right: 10px;
+}
+
+// Text
+h1 
+{
+    margin-bottom: 20px;
+    color: $main-color;
+}
+
+h4
+{
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+#list-header
+{
+    justify-content: space-between;
+    h3
+    {
+        font-size: 1.5rem;
+    }
+    .btn
+    {
+    width: 30px;
+    height: 30px;
+    background: $main-color;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform .2s;
+    }
+    .btn:hover
+    {
+        filter: brightness(85%);
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    button:active
+    {
+        filter: brightness(110%);
+    }
+}
+
+.trash-icon
+{
+    color: white;
+    background-color: $close-color;
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    transition: transform .2s;
+}
+
+.trash-icon:hover
+{
+    filter: brightness(85%);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.trash-icon:active
+{
+    filter: brightness(110%);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.fa-trash
+{
+    transform: translateX(25%)
+}
+
+dialog
+{
+    border: 2px solid $main-color;
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .modal-header
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    div:last-of-type
+    {
+        margin-top: auto;
+    }
+    .modal-button
+    {
+        width: 200px;
+        height: 40px;
+        border: none;
+        border-radius: 40px;
+        color: white;
+        background-color: $main-color;
+    }
+    .modal-close
+    {
+        background-color: $close-color;
+        border: none;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.modal-content-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}

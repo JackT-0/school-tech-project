@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+main {
+  border: 2px solid #2a9d8f;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+main hr {
+  border: 1px solid #2a9d8f;
+  margin-bottom: 15px;
+}
+
+nav {
+  background-color: #2a9d8f;
+  color: white;
+  border-radius: 20px;
+  width: 300px;
+  margin-right: 20px;
+  padding: 20px;
+  position: relative;
+}
+nav hr {
+  border: 1px solid white;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  background: #2a9d8f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: filter 0.05s;
+}
+nav ul li:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+nav h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+#content-wrapper {
+  height: calc(100vh - 40px);
+  width: 100%;
+}
+
+#list-items {
+  align-items: center;
+}
+
+.task-card {
+  background-color: #2a9d8f;
+  color: white;
+  width: 90%;
+  min-height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 40px;
+  margin: 10px 0;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+#add-task-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: none;
+  font-size: 2rem;
+  background-color: #2a9d8f;
+  color: white;
+  transition: transform 0.2s;
+}
+
+#add-task-button:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+#add-task-button:active {
+  filter: brightness(110%);
+}
+
+i {
+  margin-right: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+#list-header {
+  justify-content: space-between;
+}
+#list-header h3 {
+  font-size: 1.5rem;
+}
+#list-header .btn {
+  width: 30px;
+  height: 30px;
+  background: #2a9d8f;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+#list-header .btn:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#list-header button:active {
+  filter: brightness(110%);
+}
+
+.trash-icon {
+  color: white;
+  background-color: #e76f51;
+  border: none;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  transition: transform 0.2s;
+}
+
+.trash-icon:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.trash-icon:active {
+  filter: brightness(110%);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.fa-trash {
+  transform: translateX(25%);
+}
+
+dialog {
+  border: 2px solid #2a9d8f;
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+dialog .modal-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+dialog div:last-of-type {
+  margin-top: auto;
+}
+dialog .modal-button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  background-color: #2a9d8f;
+}
+dialog .modal-close {
+  background-color: #e76f51;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.modal-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}/*# sourceMappingURL=styles.css.map */

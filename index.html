@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskIt</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/654c93ac12.js" crossorigin="anonymous"></script>
+
+    <script src="./scripts/tasks.js" defer></script>
+</head>
+<body>
+
+    <div id="content-wrapper" class="flex">
+        <nav class="flex column">
+            <h2>TaskIt</h2>
+            <hr>
+            <ul id="list-categories">
+                <li><i class="fa-regular fa-calendar"></i>Today</li> 
+                <li><i class="fa-solid fa-star"></i>Important</li>
+                <li><i class="fa-solid fa-earth-americas"></i>All</li>
+            </ul>
+            <div id="list-header" class="flex">
+                <h3>Lists</h3>
+                <button class="btn">+</button>
+            </div>
+            <ul id="list-container">
+                <li>
+                    <img src="" alt="">Default 
+                </li>
+                
+            </ul>
+        </nav>
+
+        <main>
+            <h1 id="subject-title">Today</h1>
+            <hr>
+            <div id="task-card-container">
+
+                <div id="list-items" class="flex column">
+                    <div class="task-card flex">
+                        <div class="task-info">
+                            <h2>Default Task Header</h2>
+                            <p>Default Task Explanation</p>
+                            <h4>Jan 1 2000</h4>
+                        </div>
+                        <button class="trash-icon">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <button id="add-task-button">+</button>
+        </main>
+
+    </div>
+
+    <dialog id="list-modal">
+        <div class="modal-content-container">
+            <div class="modal-header" class="flex">
+                <h2>Create New List</h2>
+                <button class="modal-close">✖</button>
+            </div>
+            <form>
+                    <div>
+                        <label for="list-name">List Name</label>
+                        <input type="text" name="list-name" id="list-name-input">
+                    </div>
+            </form>
+            <div>
+                <button class="modal-button">Create List</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="task-Modal"></dialog>
+    <dialog id="confirmation-Modal"></dialog>
+
+</body>
+</html>
